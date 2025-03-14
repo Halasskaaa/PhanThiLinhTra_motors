@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Globalization;
 using System.Threading.Tasks;
 
 namespace Motors
 {
 	internal class Statisztika
 	{
-		List<Motor> motors = [];
+		public List<Motor> motors = [];
 
 		public void ReadFromFile(string fileName)
 		{
@@ -25,7 +26,7 @@ namespace Motors
 					szavak[0], 
 					szavak[1], 
 					Convert.ToInt16(szavak[2]), 
-					Convert.ToDouble(szavak[3]), 
+					Convert.ToDouble(szavak[3], CultureInfo.InvariantCulture), 
 					Convert.ToDouble(szavak[4]));
 
 				motors.Add( ujMotor );
@@ -43,7 +44,7 @@ namespace Motors
 			return (int)sum;
 		}
 
-		public bool Cotaims(string motorName)
+		public bool Contains(string motorName)
 		{
 			bool isThere = false;
 

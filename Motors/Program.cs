@@ -25,7 +25,7 @@
 
 			Console.WriteLine(); //////////////////////////////////
 
-			Console.WriteLine($"A választott {valasztottMotor} brandű motorok kollektív összege: {statisztika.SumBasedOnBrand(valasztottMotor, filename)}");
+			Console.WriteLine($"A választott {valasztottMotor} brand motorok kollektív összege: {statisztika.SumBasedOnBrand(valasztottMotor, filename)}");
 
 			Console.WriteLine(); //////////////////////////////////
 
