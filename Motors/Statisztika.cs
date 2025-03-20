@@ -9,7 +9,7 @@ namespace Motors
 {
 	internal class Statisztika
 	{
-		public List<Motor> motors = [];
+		public List<Motor> motors = new List<Motor>();
 
 		public void ReadFromFile(string fileName)
 		{
